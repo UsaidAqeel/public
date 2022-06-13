@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pak Maco</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/Pakmaco_2_Final_Logo-removebg-preview.png"
+    />
+  </head>
+
+  <body class="Feed-color">
+    <div class="sub" id="sub">
+
+      <section class="stuc">
+        <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <img
+            class="navbar-brand"
+            src="./img/Pakmaco_2_Final_Logo-removebg-preview - Copy.png"
+            width="100px"
+            id="image"
+            height="80px"
+          />
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="./index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="./about.html">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="./product.html">Product</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="./contact.html">Feedback</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="./feedback.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    
+    <!-- a -->
+    <a href="./index.html" class="anchor">Home /</a>
+    <!-- cont -->
+    <div class="cont-center">
+      <div class="cont-text">
+        <div class="contact-cont">
+          <h1>Contact Us</h1>
+          <p>
+            Do you have any queries or comments about getting a quote, our
+            products, pans and services, or support? Get in touch with us by
+            completing the form below.
+          </p>
+        </div>
+        <div class="input-parent">
+          <input type="text" placeholder="First Name" onblur="foucs(this)"/>
+          <input type="text" placeholder="Last Name"  onblur="foucs(this)"/>
+        </div>
+        <div class="input-parent">
+          <input type="text" placeholder="Email" onblur="checkemail(this)"/>
+          <input type="text" placeholder="Phone Number" onblur="no(this)"/>
+        </div>
+        <div class="selection">
+          <select name="Country" onclick="foo(this)">
+            <option value="" disabled selected>Select Country</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Unite Kingdom">Unite Kingdom</option>
+          </select>
+          <select name="Country" onclick="foo(this)">
+            <option value="" disabled selected>Industry</option>
+            <option value="Oil">Oil</option>
+            <option value="Gas">Gas</option>
+            <option value="Chemical">Chemical</option>
+            <option value="Soap">Soap</option>
+          </select>
+        </div>
+        <div class="input-parent">
+          <input type="text" placeholder="Present Address" onblur="foucs(this)"/>
+        </div>
+        <div class="checkBox" id="checkBox">
+          <h5>Contact Reason</h5>
+          <input type="radio" name="reason" id="1" />
+          <label for="1">Any Problem</label> <br />
+          <input type="radio" name="reason" id="2" />
+          <label for="2">Learn more about products</label> <br />
+          <input type="radio" name="reason" id="3" />
+          <label for="3">Find support or documentation</label> <br />
+          <input type="radio" name="reason" id="4" />
+          <label for="4">Order replacement parts or maintenance</label> <br />
+          <label class="red-color" id="red_alert">Please Select This</label>
+        </div>
+        <div class="textArea">
+          <p>Message</p>
+          <textarea onblur="foucs(this,'place')" placeholder="Enter the Message"></textarea>
+        </div>
+        <div class="pri">
+          <p>
+            We respect your right to privacy. Pakmaco maintains limited data for
+            the purpose of communications such as this. All data will be removed
+            upon request or when there is no activity for a period of six (6)
+            months. Please review our Privacy Policy. You can subscribe or
+            unsubscribe at any time.
+          </p>
+        </div>
+        <div class="agree">
+          <input type="radio"  id="agree" />
+          <label for="agree"
+          >I agree to receive marketing communications from Pakmaco</label
+          >
+        </div>
+        <button onclick="formcheck()">Submit</button>
+        <div class="numbr">
+          <h6>Pakmaco Phone Number</h6>
+          <p >Headquarter : +92-42 36301962 <br />
+           Customer-care :  +92-42 36308206</p>
+          
+        </div>
+        <div class="numbr">
+          <h6>Headquarter's</h6>
+          <p >Suite 207, Horizon Tower,
+            Block-3, <br /> Clifton,
+            Karachi – 75600,
+            Pakistan.</p>
+          
+        </div>
+        <p class="share"><i class="fa-solid fa-share-nodes"></i> Share</p>
+    
+      </div>
+    </div>
+    
+    <!-- Form -->
+    
+    <!-- footter -->
+    <section class="cus-container">
+      <div class="footer mar">
+        <img
+          class="navbar-brand"
+          src="./img/Pakmaco_2_Final_Logo-removebg-preview.png"
+          width="100px"
+          height="80px"
+        />
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Disclaimer</li>
+          <li>Reference</li>
+          <li>Product</li>
+          <li>Brand</li>
+        </ul>
+        <p class="last-line">
+          © 2022 Pakmaco (PVT) - All Rights Reserved
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </p>
+      </div>  
+    </div>
+    </section>
+    <div class="done"id="done">
+      <h1>Thank You!</h1>
+      <p>For Contact Us with Pak-maco. The Pakmaco Team give you a replay in just few Day. </p>
+      <button onclick="cr()">Done</button>
+    </div>
+
+  </body>
+  <script src="app.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"
+  ></script>
+</html>
